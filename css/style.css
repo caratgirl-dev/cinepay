@@ -2,8 +2,9 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "Varela Round", sans-serif;
-    width: 100%;
+    width: 1100px;
 }
 
 .header {
@@ -53,39 +54,23 @@ body {
     color: black;
     font-size: 16px;
     font-weight: 500;
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    margin-left: 20px;
 }
 
 .btn-2 a {
     background: linear-gradient(to right, #f92c2c, #f15b25);
-    color: black;
+    color: white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 14px;
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    margin-right: 25px;
+    font-weight: bold;
 }
 
 .btn-container {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.nouveautes {
-    background-color: transparent;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    display: inline-block;
-    color: white;
-    border: white solid 1px;
+    margin-right: -400px;
 }
 
 .hero {
@@ -93,18 +78,34 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    max-width: 1500px;
-    height: 120vh;
-    margin: 0 auto;
+    height: 100vh;
+}
+
+.nouveautes {
+    background-color: transparent;
+    padding: 5px 15px;
     border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    color: white;
+    border: white solid 0.1px;
+    margin-top: 200px;
+}
+
+.iconx {
+    color: rgb(67 141 124);
+}
+
+.hero {
     background: radial-gradient(circle at top left, rgba(139, 0, 0, 0.8), rgba(0, 0, 0, 1) 60%);
-    padding: 50px 20px;
+    margin-left: 35px;
+    width: 133%;
+    border-radius: 20px;
+    height: 1400px;
 }
 
 h1 {
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 50px;
     margin: 20px 0;
     color: white;
     text-align: center;
@@ -115,15 +116,16 @@ h1 {
     padding: 5px 10px;
     border-radius: 10px;
     color: white;
+    display: inline-block;
+    transform: rotate(-4deg);
 }
 
 .description {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     max-width: 600px;
     margin: 10px auto 30px;
     color: white;
-    text-align: center;
 }
 
 .buttons {
@@ -142,9 +144,9 @@ h1 {
 
 .stats {
     display: flex;
-    gap: 40px;
-    margin-top: 40px;
+    gap: 300px;
     color: white;
+    margin-top: 20px;
 }
 
 .stat {
@@ -161,7 +163,8 @@ h1 {
     gap: 2px;
     background: white;
     border-radius: 55px;
-    padding: 0px 10px;
+    width: fit-content;
+    padding: 5px 10px;
 }
 
 .Tel .text a {
@@ -170,17 +173,192 @@ h1 {
 }
 
 .centered-video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-top: 50px;
+    max-width: 60%;
+    max-height: 50%;
+    margin-top: 200px;
+    font-size: 30px;
     border-radius: 20px;
 }
+.Box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    background: rgb(33 37 41);
+    margin-left: 35px;
+    width: 133%;
+    border-radius: 20px;
+    text-align: center;
+}
+.Boxbtn{
+    background-image: linear-gradient(45deg, #f92c2c, #f15b25);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 55px;
+    padding: 10px 25px;
+    margin-top: 100px;
+}
+.Box h2{
+    font-size: 50px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.opacity{
+    color:#dddd
+}
+.Box-conteneur{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+.boxx {
+    padding: 20px;
+    border-radius: 10px;  
+}
 
-.cinetpay-section {
+.boxx {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+}
+.boxx h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+.boxx p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 60px 90px;
+    border-radius: 15px;
+    margin: 40px;
+    width: 1280px;
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    width: 200px;
+    margin: 20px;
+}
+
+.subscribe-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-content {
+   display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.brand h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cinet {
+    font-style: italic;
+}
+
+.pay {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul :hover {
+    color: #aaa;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social-icons i {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+ }
+ .cinetpay-section {
     text-align: center;
     padding: 80px 20px;
     background: white;
+   width: 100%;
+   background-image: url(../img/bg.png);
+   align-self: center;
 }
 
 .section-title {
@@ -198,10 +376,10 @@ h1 {
 .cinetpay-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
     margin: 0 auto;
+    width: 100%;
     gap: 40px;
+    margin-left: 200px;
 }
 
 .cinetpay-text {
@@ -219,6 +397,7 @@ h1 {
     font-size: 1.2rem;
     color: black;
     margin: 20px 0;
+    margin-left: 800px;
 }
 
 .cinetpay-description {
@@ -355,7 +534,6 @@ h1 {
     display: flex;
     gap: 15px;
 }
-
 .school-image {
     width: 50%;
 }
@@ -395,11 +573,12 @@ h1 {
     padding: 50px 20px;
 }
 
-.confiance h4 {
+.confiance h2 {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
+    margin-left: 450px;
 }
 
 .confiance p {
@@ -407,8 +586,15 @@ h1 {
     color: #666;
     margin-bottom: 30px;
     text-align: center;
+    margin-left: 450px;
 }
+.logos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    gap: 40px;
+    margin-left: 150px;
 
+}
 .logos img {
     max-width: 150px;
     height: auto;
@@ -419,27 +605,26 @@ h1 {
     padding: 50px 20px;
 }
 
-.temoignages h4 {
+.temoignages h2 {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-    padding: 20px;
+    margin-left: 450px;
 }
 
 .conteneur-cartes {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 200px;
+    margin-left: 450px;
 }
 
 .carte {
     background: #ffffff;
     border-radius: 10px;
-    padding: 40px;
+    padding: 50px;
     border: 1px solid #aaa;
-    max-width: 240px;
     text-align: left;
 }
 
@@ -459,15 +644,16 @@ h1 {
     font-size: 14px;
     color: #777;
 }
-
-h5 {
+.prêt h5 {
     text-align: center;
     font-size: 35px;
+    margin-left: 450px;
 }
 
 .prêt p {
     text-align: center;
     font-size: 20px;
+    margin-left: 450px;
 }
 
 .action-buttons {
@@ -476,6 +662,7 @@ h5 {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    margin-left: 450px;
 }
 
 .main-btn {
@@ -503,202 +690,3 @@ h5 {
     font-weight: bold;
     color: #333;
 }
-
-.footer {
-    background-color: #111;
-    color: white;
-    padding: 60px 90px;
-    border-radius: 15px;
-    font-family: Arial, sans-serif;
-    margin: 40px;
-}
-
-.newsletter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.newsletter p {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.newsletter input {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    width: 200px;
-    margin: 20px;
-}
-
-.subscribe-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.footer-section {
-    max-width: 200px;
-}
-
-.brand h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.cinet {
-    font-style: italic;
-}
-
-.pay {
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.language {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-top: 10px;
-}
-
-.footer-section h3 {
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 5px;
-}
-
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-section ul :hover {
-    color: #aaa;
-
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 20px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.social-icons i {
-    font-size: 18px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.Box {
-    background: rgb(33, 37, 41);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 20px;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.Boxbtn {
-    background-image: linear-gradient(45deg, #f92c2c, #f15b25);
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 55px;
-    padding: 8px 20px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 40px;
-    margin: 20px 0;
-    color: white;
-    font-weight: bold;
-}
-
-.highlight {
-    background-color: #f92c2c;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 4px;
-}
-
-.opacity {
-    color: #ddd;
-    max-width: 600px;
-    margin-bottom: 30px;
-}
-
-.Box-conteneur {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.boxx {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.boxx svg {
-    width: 40px;
-    height: 40px;
-    color: white;
-    margin-bottom: 10px;
-}
-
-.boxx h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-}
-
-.boxx p {
-    font-size: 14px;
-    color: #ddd;
-    opacity: 0.8;
-    max-width: 250px;
-}
-
-
