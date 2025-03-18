@@ -691,63 +691,97 @@ h1 {
     color: #333;
 }
 @media (max-width: 1024px) {
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
-    }
-    .btn-container {
-        margin-right: 0;
-    }
-    h1 {
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 768px) {
     .container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
     }
+    
     .menu {
         flex-direction: column;
         gap: 10px;
     }
-    .hero {
+    
+    .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero, .Box {
         height: auto;
         padding: 50px 20px;
     }
-    h1 {
+    
+    .cinetpay-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .cinetpay-image {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero h1 {
         font-size: 30px;
     }
+    
     .description {
         font-size: 16px;
     }
-    .buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
+    
     .stats {
         flex-direction: column;
         gap: 20px;
+        text-align: center;
+    }
+    
+    .cinetpay-content {
+        flex-direction: column;
+    }
+    
+    .cinetpay-image img {
+        width: 100%;
+    }
+    
+    .logos {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .conteneur-cartes {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .carte {
+        width: 90%;
+    }
+    
+    .prêt h5, .prêt p, .action-buttons {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer {
+        width: 100%;
+        padding: 30px;
     }
 }
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 30px 10px;
-    }
-    h1 {
-        font-size: 28px;
-    }
-    .description {
-        font-size: 14px;
-    }
-    .btn-primary {
-        padding: 8px 20px;
-    }
-    .centered-video {
-        max-width: 100%;
-    }
-}
-
